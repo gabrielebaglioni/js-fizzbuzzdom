@@ -12,9 +12,14 @@
 const list = document.querySelector(".list");
 for (i = 1; i < 100; i++) {
    //creo element lista
-   const element = document.createElement('li');
+   let element = document.createElement('div');
    element.classList.add("item");
    element.innerHTML = i;
    list.append(element);
+   if(i%3===0)
+   element.classList.add("fizz")
+   if(i%5===0)
+   element.classList.add("buzz")
    console.log(element)
+   
 }

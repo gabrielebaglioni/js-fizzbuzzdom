@@ -14,9 +14,53 @@
    border: 2px solid #fff;
    border-radius: 10px;
    margin: 5px 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   aspect-ratio: 1/1;
 }
 .list{
    list-style: none;
    display: flex;
    flex-wrap: wrap;
+}
+.fizz::after{
+   background-color: red;
+   content: "fizz";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.buzz::after{
+   background-color: black;
+   content: "buzz";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.fizz.buzz::after{
+   background-color: blue;
+   content: "FizzBuzz";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
