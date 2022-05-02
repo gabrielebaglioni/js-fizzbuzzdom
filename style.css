@@ -3,3 +3,20 @@
    padding: 0;
    margin: 0;
 }
+.item {
+   width: 100px;
+   height: 100px;
+   background-color: green;
+   color: #fff;
+   text-align: center;
+   line-height: 100px;
+   font-size: 24px;
+   border: 2px solid #fff;
+   border-radius: 10px;
+   margin: 5px 5px;
+}
+.list{
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+}
